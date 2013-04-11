@@ -13,6 +13,8 @@ class ExceptionNotifier
       options[:body] ||= {}
       options[:body][:exception] = {:error_class => exception.class.to_s,
                                     :message => exception.message.inspect,
+                                    :env => options[:env],
+                                    :hostname => `hostname`.chomp,
                                     :backtrace => exception.backtrace}
 
       HTTParty.send(http_method, url, options)
