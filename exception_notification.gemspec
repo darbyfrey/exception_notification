@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency("actionmailer", ">= 3.0.4")
   s.add_dependency("activesupport", ">= 3.0.4")
+  s.add_dependency("httparty")
 
   s.add_development_dependency "tinder", "~> 1.8"
   s.add_development_dependency "httparty", "~> 0.10.2"

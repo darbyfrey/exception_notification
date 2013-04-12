@@ -4,6 +4,7 @@ PATH
     exception_notification (3.0.1)
       actionmailer (>= 3.0.4)
       activesupport (>= 3.0.4)
+      httparty
 
 GEM
   remote: https://rubygems.org/
